@@ -16,6 +16,7 @@ class fractal:
        for y in range(len(self.result_matrix[0])):
            for x in range(len(self.result_matrix)):
                z = 0 + 0j
+               # Iterate 10 times
                for count in range(10):
                     z = pow(z,2) + self.matrix[x][y]
                self.result_matrix[x][y] = abs(z)
@@ -38,6 +39,6 @@ class fractal:
 
 eka = fractal
 eka.start(eka)
-eka.show_as_text(eka)
+# eka.show_as_text(eka)
 eka.calculate_fractal(eka)
 eka.show_result_as_text(eka)
